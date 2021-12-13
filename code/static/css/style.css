@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* This rule isn't used in the project as distributed, because the JavaScript
+code hides the video element. */
+body video {
+    position: absolute;
+    opacity: 0.5;
+}
+
+h1{
+    color:red;
+}
+
+#rank {
+    position: fixed;
+    right: 0;
+    top: calc(50% - 25vh);
+    width: 240px;
+    height: 50vh;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px 0 0 10px;
+}
+#rank .title {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+#rank-list {
+    height: calc(100% - 3.6em);
+    overflow: scroll;
+}
+#rank-list::-webkit-scrollbar {
+    display: none;
+}
+#rank-list .rank-item {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+#rank-list .score {
+    color: yellow;
+}
+.btns {
+    position: absolute;
+    top: -40px;
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+}
+.btns a {
+    margin-right: 10px;
+}

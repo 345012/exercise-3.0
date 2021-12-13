@@ -1,0 +1,37 @@
+body {
+    background-image: url(../img/bg1.jpg);
+    background-size: 400px;
+}
+#loginform, #registerform {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px 50px;
+    border-radius: 10px;
+}
+.line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.lbl { 
+    width: 120px;
+}
+.line input {
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    border: 1px solid #6b9aff;
+    transition: all .3s;
+}
+.line input:focus {
+    filter: drop-shadow(0 0 5px #6b9aff);
+}
+#loginBtn, #registerBtn {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+#loginBtn:hover, #registerBtn:hover {
+    opacity: 0.8;
+}
